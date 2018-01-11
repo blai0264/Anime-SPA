@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt');
+@charset 'utf-8';
+/**********************************
+        DEFAULTS
+**********************************/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 20px;
+    font-family: "Berkshire Swash", Times, "Times New Roman", serif;
+    line-height: 1.5;
+    background-color: orange;
+    background-image: url(../img/background.jpg);
+    background-repeat: repeat-y;
+}
+body{
+    min-height: 100vh;
+}
+
+p{
+    font-family: 
+}
+
+
+/**********************************
+        LAYOUT
+**********************************/
+.page{
+    transform: translateX(-200%);
+    width: 100%;
+    padding: 5rem 0 2rem 0;
+    transition: transform 0.5s ease-out;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+}
+.page.active{
+    transform: translateX(0);
+}
+.page header{
+    font-family: "Rock Salt", Roboto, Helvetica, Arial, sans-serif;
+    text-align: center;
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4.3rem;
+    padding: 0 0rem;
+    border-bottom: 0.3rem solid #333;
+    background-color: black;
+    color: orange;
+}
+.page header>h1{
+    font-family: "Rock Salt", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    height: 4rem;
+    line-height: 4rem;
+}
+/**********************************
+        LIST PAGE
+**********************************/
+
+.item-card{
+    margin: 1rem 1rem;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 2px #ddd;
+    overflow: auto;
+    background-color: #000;
+}
+.item-card img{
+    float:left;
+    margin-right: 1rem;
+    padding: 0.5rem;
+    width: auto;
+    height: 10rem;
+    border-right: 1px solid #333;
+}
+.item-title{
+    font-family: "Rock Salt", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.item-title:hover{
+    color: orange;
+}
+.item-desc{
+    font-size: .8rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    color: orange;
+    height: 6rem;
+    text-overflow:clip;
+    overflow:auto;
+}
+/**********************************
+        DETAILS PAGE
+**********************************/
+.char-name{
+    text-align: center;
+    margin-top: 0;
+    font-family: "Rock Salt", Roboto, Helvetica, Arial, sans-serif;
+    color: darkorange;
+    
+}
+
+span {
+    margin-top: 0;
+}
+
+.item-card2{
+    margin: 1rem 1rem;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 2px #ddd;
+    overflow: hidden;
+    overflow-x: hidden;
+    background-color: #000;
+    height: 13rem;
+    max-width: 800px;
+
+}
+#detailheader{
+    font-size: 2rem;
+    height: 100%;
+}
+.parent-div{
+    display: flex;
+    justify-content: center;
+}
+
+/*
+.character-title{
+    font-family: "Rock Salt", Roboto, Helvetica, Arial, sans-serif;
+    text-align: center;
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4.3rem;
+    padding: 0 2rem;
+    border-bottom: 0.3rem solid #333;
+    background-color: black;
+    color: darkorange;
+}
+*/
+
+.item-desc2{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    color: orange;
+    height: 13rem;  
+    text-overflow:clip;
+    overflow: auto;
+    overflow-x: hidden;
+}
+.img-div{
+    display: flex;
+    justify-content: center;
+}
+
+.back-btn{
+    position:absolute;
+    font-size: 2rem;
+    top:0;
+    left:0;
+    color: #fff;
+    margin-right: 2rem;
+}
+.back-btn:hover{
+    color: orange;
+}
+/**********************************
+        ANIMATIONS
+**********************************/
